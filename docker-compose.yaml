@@ -1,0 +1,9 @@
+name: codingtools
+
+services:
+  app:
+    image: ${DOCKER_IMAGE:-ifsherlock/codingtools:latest}
+    container_name: ${CONTAINER_NAME:-codingtools}
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-8080}:80"
