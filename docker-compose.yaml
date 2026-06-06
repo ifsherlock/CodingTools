@@ -2,7 +2,7 @@ name: codingtools
 
 services:
   app:
-    image: ${DOCKER_IMAGE:-ifsherlock/codingtools:latest}
+    image: ${DOCKER_IMAGE:-jaysherlock/codingtools:latest}
     container_name: ${CONTAINER_NAME:-codingtools}
     restart: unless-stopped
     ports:
